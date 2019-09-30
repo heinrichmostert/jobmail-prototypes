@@ -1,0 +1,75 @@
+//Heading Titles
+.main-title { 
+    font-size: 20px;
+    font-weight: 600;
+    &:before { 
+        content:'\f45c';
+        font-family: 'Font Awesome 5 Free';
+        color:$blue;
+        font-size: 0.5em;
+        vertical-align: middle;
+        margin-right:10px;
+    }
+}
+
+//Breadcrumbs
+.breadcrumb {
+    font-size: 0.65em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: $breadcrumb-border;
+}
+
+//Pagination
+.pagination  { 
+    .page-item { 
+        font-weight: 600;
+        .page-link {
+            color:$gray-600;
+            border:none;
+            border-radius: 3px;
+            padding:3px 8px;
+            margin:0 3px;
+        }
+        &.active { 
+            .page-link {
+                color:white;
+            }
+        }
+    }
+}
+
+
+.btn-outline-danger { 
+    color:$primary;
+    background:white;
+    &:hover { 
+        color:$white;
+        background:$primary;
+    }
+}
+
+.bordered-section { 
+    border-radius: 8px;
+    background:white;
+    border:1px solid $gray-500;
+    padding:15px; 
+    margin-bottom:15px;
+}
+
+.btn { 
+    border-radius: 40px;
+    padding:8px 20px;
+    font-weight: bold;
+
+}
+
+.btn-light { 
+    background:$white;
+    color:$primary;
+}
+
+a { 
+    font-size: 0.9em;
+    font-weight: 600;
+}

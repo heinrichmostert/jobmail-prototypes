@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Bootstrap 4 Minimal Template</title>
+
+	<link rel="shortcut icon" href="" type="image/x-icon">
+	<link rel="apple-touch-icon" href="">
+	<link rel="stylesheet" href="css/sparrow.css">
+
+</head>
+
+<body>
+
+    <div class="utility-bar d-none d-md-block"></div>
+    <nav class="navbar navbar-expand fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="images/jobmail-logo-full.png" alt="" height="40" class="d-none d-md-block">
+            <img src="images/jobmail-logo-square.png" alt="" height="40" class="d-block d-md-none">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-bell" aria-hidden="true"></i> Alerts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-comment" aria-hidden="true"></i> Premium Ad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-cog" aria-hidden="true"></i> Dash</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-lock" aria-hidden="true"></i> Logout</a>
+                </li>
+                <li class="nav-item">
+                        <img src="images/generic_sm.png" width="40" height="40" alt="">
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="search-bar d-none d-md-block">
+        <form>
+            <div class="form-row h-100">
+                <div class="col-md-1 col-lg-2 text-center text-white d-none d-lg-inline-block">
+                    <span><b>Search CV's</b></span>
+                </div>
+                <div class="col-md-2 col-lg-2 pl-3">
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Job Title" value="" required>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                    <select class="custom-select">
+                        <option value="0">Industry</option><option value="3">Administration/PA/Secretary</option><option value="6">Automotive</option><option value="15">Building/Construction/Mining</option><option value="22">Clearing and Forwarding</option><option value="14">Engineering</option><option value="24">FMCG</option><option value="2">Finance/Accounting</option><option value="5">General Employment</option><option value="8">Health and Skincare</option><option value="13">IT/Computer</option><option value="1">Insurance</option><option value="21">International</option><option value="10">Legal</option><option value="17">Logistics</option><option value="19">Management</option><option value="20">Manufacturing</option><option value="11">Medical</option><option value="4">Part Time/Temporary</option><option value="18">Professions</option><option value="23">Property/Facilities Management</option><option value="7">Retail</option><option value="12">Sales/Marketing</option><option value="9">Tourism/Hospitality</option><option value="16">Trade/Artisans/Technical</option><option value="25">Training</option>
+                    </select>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                    <select class="custom-select">
+                        <option value="0" selected="selected">Sub-industry</option><option value="40">Datacapturing</option><option value="41">Girl Friday</option><option value="44">Other Administration/PA/Secretary</option><option value="42">PA/Secretary</option><option value="43">Switchboard/Reception</option>
+                    </select>
+                </div>
+                <div class="col-md-2 col-lg-1">
+                    <select class="custom-select">
+                        <option value="0" selected="selected">South Africa</option>
+                        <option value="8">Eastern Cape</option>
+                        <option value="9">Free State</option>
+                        <option value="15">Gauteng</option>
+                        <option value="7">Kwazulu-Natal</option>
+                        <option value="5">Limpopo</option>
+                        <option value="3">Mpumalanga</option>
+                        <option value="4">North West</option>
+                        <option value="10">Northern Cape</option>
+                        <option value="6">Western Cape</option>
+                        <option value="11">Other</option>
+                    </select>
+                </div>
+                <div class="col-md-2 col-lg-1">
+                    <select class="custom-select">
+                        <option value="0" selected="selected">City</option>
+                        <option value="1">1</option>
+                        <option value="1">2</option>
+                        <option value="1">3</option>
+                        <option value="1">4</option>
+                    </select>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                    <button type="submit" class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <a href="JavaScript:void(0);" id="advancedSearch" class="text-white"><i class="fa fa-bars ml-2" aria-hidden="true"></i><small class="d-none d-lg-inline-block">ADVANCED</small></a>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <!-- Advanced Search-->
+    <div class="advanced-search d-none">
+        <button type="button" class="close" aria-label="Close" id="closeAdvanced">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="row">
+            <div class="col-md-9">
+                <span class="p font-weight-bold">Advanced Search...</span>
+                <form class="form-inline mt-3">
+                    <label for="inlineFormInputName2" class="mr-2">Enter more Keywords</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Eg:Junior, Intern, Contract, Disabled...">
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Any</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">All</label>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <select class="form-control" id="industrySelect">
+                            <option value="0">Industry</option><option value="3">Administration/PA/Secretary</option><option value="6">Automotive</option><option value="15">Building/Construction/Mining</option><option value="22">Clearing and Forwarding</option><option value="14">Engineering</option><option value="24">FMCG</option><option value="2">Finance/Accounting</option><option value="5">General Employment</option><option value="8">Health and Skincare</option><option value="13">IT/Computer</option><option value="1">Insurance</option><option value="21">International</option><option value="10">Legal</option><option value="17">Logistics</option><option value="19">Management</option><option value="20">Manufacturing</option><option value="11">Medical</option><option value="4">Part Time/Temporary</option><option value="18">Professions</option><option value="23">Property/Facilities Management</option><option value="7">Retail</option><option value="12">Sales/Marketing</option><option value="9">Tourism/Hospitality</option><option value="16">Trade/Artisans/Technical</option><option value="25">Training</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <select class="form-control" id="SubindustrySelect">
+                            <option value="0">Sub Industry</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <select class="form-control" id="industrySelect">
+                            <option value="0">Choose a Region</option><option value="14">Africa</option><option value="221">Asia</option><option value="220">Australia</option><option value="12">Europe</option><option value="13">Middle East</option><option value="219">North America</option><option value="11">Other</option><option value="16">South Africa</option><option value="216">South America</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <select class="form-control" id="industrySelect">
+                            <option value="0">Choose a province</option><option value="8">Eastern Cape</option><option value="9">Free State</option><option value="15">Gauteng</option><option value="7">Kwazulu-Natal</option><option value="5">Limpopo</option><option value="3">Mpumalanga</option><option value="4">North West</option><option value="10">Northern Cape</option><option value="6">Western Cape</option><option value="11">Other</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <select class="form-control" id="industrySelect">
+                            <option value="0">City</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                    
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <select class="form-control" id="industrySelect">
+                            <option value="all-jobs">All Jobs</option>
+                            <option value="last-2-days">Last 2 Days</option>
+                            <option value="last-week">Last Week</option>
+                            <option value="last-2-weeks">Last 2 Weeks</option>
+                        </select>
+                    </div> 
+                    <div class="col-md-6 mt-2">
+                       <span class="font-weight-bold pr-3">Sort:</span>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Date</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Relevance</label>
+                        </div>
+                    </div>
+                    <div class="col text-right">
+                        <button type="submit" class="btn btn-info">Search Now!</button>
+                    </div>
+                </div>
+                    
+                     
+            </div>
+            <div class="col-md-3 register-account">
+                <b>Can't find the Perfect Job for you?</b>
+                <p>Register a <b>Job Seeker</b> Account with Job Mail and we will help that Perfect Job find You!</p>
+                <a href="" class="btn btn-primary text-uppercase">Register an Account</a>
+                <span class="h2 mt-3 d-block">It's FREE</span>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="container-fluid logged-in-content-wrapper p-0">
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-xl-3">
+                <div class="page-sidebar h-100 text-center p-0">
+                    <div class="d-none d-md-block">
+                        <img src="images/generic_sm.png" alt="" class="img-fluid mt-3 company-pic">
+                        <span class="h5 mt-1 d-block">UTMTest</span>
+                        <a href="http://localhost:8080/rss/employer-c9e3f2d67176b678ba066e0219a15081"><i class="fi-rss"></i> Advert Feed</a>
+                        
+                        <div class="card mt-3 mx-auto w-75">
+                            <div class="card-body">
+                                <p><span class="small text-muted"><strong>You can share your Company job listing.</strong></span></p>
+                                <a href="" data-toggle="modal" data-target="#exampleModal" class="btn btn-primary"><i class="fa fa-share-alt" aria-hidden="true"></i>  We are Hiring</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion mt-0 mt-md-3" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header active">
+                                <h2 class="mb-0">
+                                    <a href="" class="btn btn-link">
+                                        CV Search &amp; Filtering
+                                    </a>
+                                    <i class="fa fa-star" aria-hidden="true"></i> 
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h2 class="mb-0">
+                                    <a href="" class="btn btn-link">
+                                        Candidate Filtering &amp; Screening
+                                    </a>
+                                    <i class="fa fa-star" aria-hidden="true"></i> 
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    My Job Ads <span class="badge badge-info badge-pill">14</span>
+                                    </button>
+                                    <i class="fa fa-paperclip" aria-hidden="true"></i>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <a href=""> Current Vacancies</a>
+                                            <span class="badge badge-secondary badge-pill">14</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <a href="">Print Vacancies</a>
+                                            <span class="badge badge-secondary badge-pill">2</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <a href="">Archived Vacancies</a>
+                                            <span class="badge badge-secondary badge-pill">1</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseOne">
+                                        Place an Ad
+                                    </button>
+                                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                </h2>
+                            </div>
+
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item align-items-center">
+                                            <a href=""><b>500</b> characters with logo</a>
+                                        </li>
+                                        <li class="list-group-item align-items-center">
+                                          <a href=""><b>Up to 8000</b> characters with logo</a>
+                                        </li>                                      
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                       My Favourite CV's <span class="badge badge-info badge-pill">76</span>
+                                    </button>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item align-items-center">
+                                            <a href="">View Basket</a>
+                                        </li>                                  
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSix">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Applications <span class="badge badge-info badge-pill">19</span>
+                                    </button>
+                                    <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                                </h2>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item align-items-center">
+                                            <a href="">View Applications</a>
+                                        </li> 
+                                        <li class="list-group-item align-items-center">
+                                            <a href="">View Auto Rejected Candidates</a>
+                                        </li> 
+                                        <li class="list-group-item align-items-center">
+                                            <a href="">yolandi@dotslash.co.za</a>
+                                        </li>                                  
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSeven">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Alerts
+                                    </button>
+                                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                                </h2>
+                            </div>
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item align-items-center">
+                                            <a href="">Manage Alerts</a>
+                                        </li>                                  
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingEight">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    My Profile
+                                    </button>
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </h2>
+                            </div>
+                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item align-items-center">
+                                            <a href="">View Profile</a>
+                                        </li> 
+                                        <li class="list-group-item align-items-center">
+                                            <a href="">Edit Profile</a>
+                                        </li>
+                                        <li class="list-group-item align-items-center">
+                                            <a href="">Regret Texts</a>
+                                        </li>  
+                                        <li class="list-group-item align-items-center">
+                                            <a href="">Change Password</a>
+                                        </li> 
+                                        <li class="list-group-item align-items-center">
+                                            <a href="">Communication Options</a>
+                                        </li>
+                                        <li class="list-group-item align-items-center">
+                                            <a href="">Manage Questionaires</a>
+                                        </li>                                  
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-8 col-xl-9">
+                <nav aria-label="breadcrumb" class="mt-3 px-3 px-md-0">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Employer Dashboard</a></li>
+                    </ol>
+                </nav>
+                <h1 class="main-title px-3 px-md-0">Refine your search criteria for qualified candidates</h1>
+                <div class="cv-refine-search p-3">  
+                    <h3 class="mb-5">Search CV</h3>
+                        <form action="">
+            <h4>Industry</h4>
+            <div class="row my-4">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="industrySelect">Industry</label>
+                        <select class="form-control" id="industrySelect">
+                            <option>Property/Facilities Management</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                   
+                        <div class="form-group">
+                           <label for="industrySelect">Sub Industry</label>
+                            <div class="checkbox-options">
+                            
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                Bluiding Service
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                Maintenance
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                Project Secretary
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                Project Administrator
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                Bluiding Service
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                Maintenance
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                Project Secretary
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                Project Administrator
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4>Location</h4>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="industrySelect">Region</label>
+                        <select class="form-control" id="industrySelect">
+                            <option>South Africa</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="industrySelect">Province</label>
+                        <select class="form-control" id="industrySelect">
+                            <option>Kwazulu-Natal</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="industrySelect">City</label>
+                        <select class="form-control" id="industrySelect">
+                            <option>Pietermaritzburg</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Willing to Relocate
+                        </label>
+                        <small class="d-block text-muted">Search for candidates who are willing to move to your desired location</small>
+                    </div>
+                </div>
+            </div>
+            <h4 class="mt-5">Search Keywords</h4>
+            <div class="cv-keyword-search">  
+                <ul class="list-group">
+                    <li class="list-group-item justify-content-between align-items-center">
+                        <div>Keywords</div>
+                        <div>Must have</div>
+                        <div>Search in these fields</div>
+                    </li>
+                    <li class="list-group-item justify-content-between align-items-center">
+                        <div class="form-group mb-0">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="C# Developer">
+                            <span class="d-block d-md-none">Keyword</span>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1"></label>
+                        </div>
+                        
+                        <div class="dropdown">
+                            <span class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="badge badge-pill badge-secondary">Qualifications</span>
+                                <span class="badge badge-pill badge-secondary">Cover Letter</span>
+                                <span class="">2 more...</span>
+                            </span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                               <p>Search for the keywords in these fields</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Wanted Job Title</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Skills</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Latest Job Title</label>
+                                </div> 
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Qualifications</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Cover Letter</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Employment History</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Career Goals</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">CV Test</label>
+                                </div> 
+                            </div>
+                        </div>
+                        <span><a href=""><i class="fas fa-times"></i></a></span>
+
+                    </li>
+                    <li class="list-group-item justify-content-between align-items-center">
+                        <div class="form-group mb-0">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Belgium Campus">
+                            <span class="d-block d-md-none">Keyword</span>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                            <label class="form-check-label" for="defaultCheck2"></label>
+                        </div>
+
+                        <div class="dropdown">
+                            <span class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="badge badge-pill badge-secondary">Qualifications</span>
+                            </span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                               <p>Search for the keywords in these fields</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Wanted Job Title</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Skills</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Latest Job Title</label>
+                                </div> 
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Qualifications</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Cover Letter</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Employment History</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Career Goals</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">CV Test</label>
+                                </div> 
+                            </div>
+                        </div>
+                        <span><a href=""><i class="fas fa-times"></i></a></span>
+
+                    </li>
+                    <li class="list-group-item justify-content-between align-items-center">
+                        <div class="form-group mb-0">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Programmer">
+                            <span class="d-block d-md-none">Keyword</span>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1"></label>
+                        </div>
+
+                        <div class="dropdown">
+                            <span class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="badge badge-pill badge-secondary">Latest Job Title</span>
+                                <span class="badge badge-pill badge-secondary">Skills</span>
+                            </span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                               <p>Search for the keywords in these fields</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Wanted Job Title</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Skills</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Latest Job Title</label>
+                                </div> 
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Qualifications</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Cover Letter</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Employment History</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Career Goals</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">CV Test</label>
+                                </div> 
+                            </div>
+                        </div>
+                        <span><a href=""><i class="fas fa-times"></i></a></span>
+
+                    </li>
+                    <li class="list-group-item justify-content-between align-items-center">
+                        <div class="form-group mb-0">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Salesman">
+                            <span class="d-block d-md-none">Keyword</span>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1"></label>
+                        </div>
+
+                        <div class="dropdown">
+                            <span class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="badge badge-pill badge-secondary">Wanted Job Title</span>
+                                <span class="badge badge-pill badge-secondary">Skills</span>
+                                <span class="">2 more..</span>
+                            </span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                               <p>Search for the keywords in these fields</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Wanted Job Title</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Skills</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Latest Job Title</label>
+                                </div> 
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Qualifications</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Cover Letter</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Employment History</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">Career Goals</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">CV Test</label>
+                                </div> 
+                            </div>
+                        </div>
+                        <span><a href=""><i class="fas fa-times"></i></a></span>
+                    </li>
+                    <li class="list-group-item justify-content-between align-items-center">
+                        <div class="form-group mb-0">
+                            <input type="text" class="form-control type-keywords" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type keywords to include in your search...">
+                            <span class="d-block d-md-none">Keyword</span>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1"></label>
+                        </div>
+                        
+                        <div></div>
+                        <span><a href=""><i class="fas fa-times"></i></a></span>
+                    </li>
+                    <li class="list-group-item justify-content-between align-items-center">     
+                        <a href=""><span><i class="fas fa-plus"></i> Add a keyword</span></a> 
+                    </li>  
+                </ul>
+            </div>
+            <div class="row my-4">
+                <div class="col text-center">
+                   <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> Hide search options <i class="fas fa-chevron-up"></i></a>
+                </div>
+            </div>
+            <div class="collapse show" id="collapseExample">
+                <h4>Personal</h4>
+                <div class="row my-4">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="industrySelect">Ethnicity</label>
+                            <select class="form-control" id="industrySelect">
+                                <option>Coloured</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="industrySelect">Employment Equity</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="empequity" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                  Both
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="empequity" checked>
+                                <label class="form-check-label" for="gridRadios2">
+                                  AA/EE Vacancies
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="empequity" checked>
+                                <label class="form-check-label" for="gridRadios2">
+                                  Non AA/EE Vacancies
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <div class="form-group">
+                            <label for="industrySelect">Citizenship</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="empequity" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                  All Citizenchip types
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="empequity" checked>
+                                <label class="form-check-label" for="gridRadios2">
+                                  Non South African <b>no</b> work permit
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="empequity" checked>
+                                <label class="form-check-label" for="gridRadios2">
+                                  Non South African <b>with</b> work permit
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="empequity" checked>
+                                <label class="form-check-label" for="gridRadios2">
+                                  South African
+                                </label>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="industrySelect">Age</label>
+                            <select class="form-control" id="industrySelect">
+                                <option>Under 20</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="industrySelect">Gender</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="empequity" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                  Both
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="empequity" checked>
+                                <label class="form-check-label" for="gridRadios2">
+                                  Female
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="empequity" checked>
+                                <label class="form-check-label" for="gridRadios2">
+                                  Male
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label for="industrySelect">Physically Disabled</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="empequity" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                      Physically Disabled
+                                    </label>
+                                </div>               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4>Qualifications</h4>
+                <div class="row my-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="industrySelect">Experience</label>
+                            <select class="form-control" id="industrySelect">
+                                <option>5-10 years</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="industrySelect">Highest Education Level</label>
+                            <select class="form-control" id="industrySelect">
+                                <option>Grade Twelve(Standard Ten/Matric)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="industrySelect">Driver Licence code</label>
+                            <select class="form-control" id="industrySelect">
+                                <option>Select</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="industrySelect">Level of Employment</label>
+                            <select class="form-control" id="industrySelect">
+                                <option>Senior Management</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <h4>Availability</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="industrySelect">Appointment Type</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="empequity" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                    All Appointment Types
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="empequity" checked>
+                                <label class="form-check-label" for="gridRadios2">
+                                    Contract
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="empequity" checked>
+                                <label class="form-check-label" for="gridRadios2">
+                                    Full-Time
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="empequity" checked>
+                                <label class="form-check-label" for="gridRadios2">
+                                    Part-Time
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="industrySelect">Availability</label>
+                            <select class="form-control" id="industrySelect">
+                                <option>Select</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="industrySelect">Salary Range</label>
+                            <select class="form-control" id="industrySelect">
+                                <option>Select</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="industrySelect">Sort by</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="empequity" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                    Date
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="empequity" checked>
+                                <label class="form-check-label" for="gridRadios2">
+                                    Relevance
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group mb-0">
+                            <label for="industrySelect">Paced from</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="empequity" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                    Last 2 Days
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="empequity" checked>
+                                <label class="form-check-label" for="gridRadios2">
+                                    This week
+                                </label>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-3">
+                        <label class="d-none d-md-block mt-md-4"></label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="empequity" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Last Weeks
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="empequity" checked>
+                            <label class="form-check-label" for="gridRadios2">
+                                This month
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-right">
+                        <button type="submit" class="btn btn-primary text-uppercase">Search</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+                </div> 
+            </div>
+        </div>
+    </div>
+    
+    <footer class="pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <!-- Heading -->
+                    <h6>
+                        About Job Mail
+                    </h6>
+
+                    <!-- List -->
+                    <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+                        <li><a href="https://www.jobmail.co.za/careers-at-junkmail-publishing">Careers @ Junk Mail</a></li>
+                        <li><a href="https://www.jobmail.co.za/contact-us">Contact Us</a></li>
+                        <li><a target="_blank" href="https://www.jobmail.co.za/blog/employers-and-job-seekers-agree-job-mail-works/">Testimonials</a></li>
+                        <li><a target="_blank" href="https://www.jobmail.co.za/blog/free-advert-criteria-terms-conditions-of-use/">Advertising Policy/Rules</a></li>
+                        <li><a href="https://www.jobmail.co.za/acceptable-use-policy">Acceptable Use Policy</a></li>
+                        <li><a href="https://www.jobmail.co.za/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="https://www.jobmail.co.za/security-policy">Security Policy</a></li>
+                        <li><a href="https://www.jobmail.co.za/services-refund-policy">Services Refund Policy</a></li>
+                        <li><a href="https://www.jobmail.co.za/terms-of-service">Terms of Service</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-6 col-md-3">
+                    <!-- Heading -->
+                    <h6>
+                        Partner Sites
+                    </h6>
+
+                    <!-- List -->
+                    <ul class="list-unstyled text-muted mb-5 mb-md-8 mb-lg-0">
+                        <li><a target="_blank" href="https://www.junkmail.co.za/">Junk Mail Classifieds</a></li>
+                        <li><a target="_blank" href="https://www.automart.co.za/">Auto Mart</a></li>
+                        <li><a target="_blank" href="https://www.gotproperty.co.za/">GotProperty</a></li>
+                        <li><a target="_blank" href="https://www.truckandtrailer.co.za/">Truck &amp; Trailer</a></li>
+                        <li><a target="_blank" href="https://www.agrimag.co.za/">AgriMag</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-6 col-md-3">
+                    <!-- Heading -->
+                    <h6>
+                        Quick Links
+                    </h6>
+
+                    <!-- List -->
+                    <ul class="list-unstyled text-muted mb-0">
+                        <li><a target="_blank" href="https://www.jobmail.co.za/sitemap">Site Map</a></li>
+                        <li><a target="_blank" href="https://www.jobmail.co.za/blog/">Blog</a></li>
+                        <li><a target="_blank" href="https://www.jobmail.co.za/companies-hiring">Companies Hiring</a></li>
+                        <li><a target="_blank" href="https://www.jobmail.co.za/avoidscams">Avoid Scams</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.jobmail.jobmail&amp;utm_source=Web&amp;utm_medium=Web&amp;utm_campaign=WebDownloadAndroidAppLink" target="_blank"><i class="fi-social-android"></i>Get the Job Mail Android App</a></li>
+                        <li>
+                            <a href="https://itunes.apple.com/za/app/job-mail/id1115080915?mt=8&amp;utm_source=Web&amp;utm_medium=Web&amp;utm_campaign=WebDownloadiOSAppLink" target="_blank"><i class="fi-social-apple"></i>Get the Job Mail Apple App</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <!-- Heading -->
+                    <h6>
+                       Follow us
+                    </h6>
+
+                    <!-- List -->
+                    <ul class="list-unstyled text-muted mb-0">
+                        <li><a href="https://www.linkedin.com/company/job-mail" target="_blank">
+                        <i class="fi-social-linkedin"></i><span> LinkedIn</span></a></li>
+                        <li><a href="https://www.facebook.com/jobmail" target="_blank"><i class="fi-social-facebook"></i><span> Facebook</span></a>
+                        </li>
+                        <li><a href="https://twitter.com/jobmail" target="_blank"><i class="fi-social-twitter"></i><span> Twitter</span></a></li>
+                        <li><a href="https://www.youtube.com/user/jobmailcoza" target="_blank"><i class="fi-social-youtube"></i><span> Youtube</span></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/jobmail/" target="_blank"><i class="fi-social-instagram"></i><span> Instagram</span></a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        <div class="container-fluid copyright-details">
+            <div class="row mt-4">
+                <div class="col text-center small">
+                    <p>Powered by <a href="www.jobmail.co.za">Job Mail</a> Copyright © Junk Mail Digital Media (PTY) LTD 2019, all rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- We are Hiring Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">We are Hiring</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/we-are-hiring.jpg" alt="" class="img-fluid mb-4">
+                    <h4>Share Link</h4>
+                    <p>You can copy and paste the following link on your website:</p>
+                    <div class="card bg-light font-weight-bold my-3">
+                        <div class="card-body">
+                            <code class="text-break text-primary">
+                                &lt;a href="https://www.jobmail.co.za/view-employer-profile-319783?utm_source=WeAreHiring&amp;utm_medium=Link&amp;utm_campaign=WeAreHiring-319783"&gt;We are Hiring&lt;/a&gt;       
+                            </code>
+                        </div>
+                    </div>
+                    <h4>Share Button</h4>
+                    <p>You can copy and paste the following code on your website:</p>
+                    <div class="card bg-light font-weight-bold my-3">
+                        <div class="card-body">
+                            <code class="text-break text-primary">
+                                    &lt;a href="https://www.jobmail.co.za/view-employer-profile-319783?utm_source=WeAreHiring&amp;utm_medium=Button&amp;utm_campaign=WeAreHiring-319783"&gt;&lt;img src="https://www.jobmail.co.za/baracuda/images/we-hiring-button.png" alt="We are hiring"  /&gt;&lt;/a&gt;
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256 CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        $(function() {                     
+            $("#advancedSearch").click(function() { 
+            $(".advanced-search").removeClass("d-none");  
+          });
+        });
+        $(function() {                     
+            $("#closeAdvanced").click(function() { 
+            $(".advanced-search").addClass("d-none");  
+          });
+        });
+    </script>
+
+</body>
+</html>

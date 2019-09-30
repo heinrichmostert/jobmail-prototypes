@@ -1,0 +1,560 @@
+// Variables
+.cv-search { 
+    .cv-search-records { 
+        
+        .list-group-item { 
+            border-radius: 0;
+            font-size: 0.75em;
+        }
+    }
+    .cv-search-result {
+        margin: 0 -15px;
+        border:1px solid $gray-300;
+        position: relative;
+        
+        &:first-of-type { 
+            margin-top:15px;
+        }
+        
+        @include media-breakpoint-up(md) {
+            margin: 15px 0;
+        }
+        
+        &.placed { 
+            .candidate-placed { 
+                @include media-breakpoint-up(md) {
+                    top:inherit;
+                    position: absolute!important;
+                }
+                display: block!important;
+                position: inherit!important;
+                top:0!important;
+               
+            }
+            .btn-view-profile { 
+                display: none!important;
+            }
+            .cv-summary { 
+                display: none;
+                @include media-breakpoint-up(md) {
+                    display: block;
+                }
+            }
+            
+            .form-check-input { 
+                display: none;
+            }
+            &:hover { 
+                cursor: default;
+                .cv-select { 
+                    display: none;
+                }
+            }
+            .candidate-info { 
+                @include media-breakpoint-up(md) {
+                    border-right:none;
+                }
+            }
+        }
+        &.selected { 
+            background:lighten($blue, 55);
+            border:2px solid $blue;
+            .cv-select { 
+                display: block!important;
+            }
+        }
+       
+        .cv-candidate-img { 
+            position: relative;
+            padding-left:20px;
+            @include media-breakpoint-down(md) {
+                position:initial; 
+                padding-left: 10px;
+                padding-top:10px;
+            }
+            
+            img { 
+                @include media-breakpoint-up(md) {
+                    padding-left: 20px;    
+                }
+            }
+            .cv-select { 
+                transition: $transition-base;
+                display: none;
+                background:lighten($blue, 50);
+                position: absolute;
+                top:0;
+                left:0;
+                width: 40px;
+                height: 100%;
+                
+                @include media-breakpoint-down(sm) {
+                    display: block;
+                    background:transparent;
+                    left:inherit;
+                    right:0;
+                    z-index: 9999;
+                    span { 
+                        display: none;
+                    }
+                    .form-check-input { 
+                        right:0;
+                    }
+                }
+                
+                .form-check-input { 
+                    position: absolute;
+                    top: 7px;
+                    color: #fff;
+                    right: 12px;
+                    border:1px solid $blue;
+                }
+                span { 
+                    position: absolute;
+                    transform: rotate(-90deg);
+                    top:60px;
+                    color: lighten($blue, 10);
+                    right: -14px;
+                    white-space: nowrap;
+                }
+            }
+        }
+        
+        .candidate-info { 
+            padding:10px;
+            @include media-breakpoint-up(md) {
+                border-right:2px solid $gray-300;
+            }
+            .h5 { 
+                @extend .text-truncate;
+            }
+        }
+        
+        &:hover {
+            @include media-breakpoint-up(md) {
+                transition: $transition-base;
+                .cv-select {
+                    transition: $transition-base;
+                    display: block;
+                }
+            }
+        }
+        
+        .cv-summary { 
+            font-weight: 600;
+            .cv-industry, .cv-employment-status, .cv-experience, .cv-equity, .cv-nationality, .cv-education { 
+                width:141px;
+                font-size: 0.7em;
+                display: inline-block;
+                
+                &.disabled { 
+                    opacity: 0.4;
+                }
+                @include media-breakpoint-up(md) {
+                    width:150px;
+                    font-size: 0.75em;
+                    margin-bottom:5px;
+                }
+                &:before { 
+                    font-family: 'Font Awesome 5 Free';
+                    width:26px;
+                    display: inline-block;
+                }
+                
+            }
+            .cv-industry { 
+                &:before { 
+                    content:'\f1ad';
+                }
+            }
+            .cv-employment-status { 
+                &:before { 
+                    content:'\f0b1';
+                }
+            }
+            .cv-experience {
+                &:before { 
+                    content:'\f4fd';
+                }
+            }
+            .cv-equity {
+                &:before { 
+                    content:'\f0ac';
+                }
+            }
+            .cv-nationality {
+                &:before { 
+                    content:'\f2bb';
+                }
+            }
+            .cv-education {
+                &:before { 
+                    content:'\f19d';
+                }
+            }
+        }
+        
+        .cv-actions { 
+            .list-group-item {
+                padding:5px 9px;
+                font-size: 0.7em;
+                text-transform: uppercase;
+                border:1px solid $blue;
+                font-weight: 600;
+                &:hover { 
+                    background:$blue;
+                    a { 
+                        color:white;
+                    }
+                }
+                a { 
+                    color:$blue;
+                }
+                
+                &.disabled-btn { 
+                    pointer-events: none; 
+                    opacity: 0.4;
+                    a { 
+                        cursor: default!important;
+                    }
+                }
+            }
+        }
+        
+        .position-wanted {
+            padding:10px;
+            position: relative;
+            
+            .position-wanted-cv-summary { 
+                
+                h2 { 
+                    @extend .text-truncate;
+                }
+                
+                .cv-unavailable { 
+                    font-style: italic;
+                    color:$gray-600;
+                    font-weight: bold;
+                    font-size: 0.9em;
+                }
+                .cv-salary, .cv-industry, .cv-region, .cv-availability  {
+                    font-size: 0.75em;
+                    display: block;
+                    line-height: 1.9em;
+                    &:before { 
+                        color:$gray-600;
+                        width:75px;
+                        display: inline-block;
+                    }
+                }   
+
+                .cv-salary { 
+                    &:before { 
+                        content:'Salary';
+                    }
+
+                }
+                .cv-industry {
+                    &:before { 
+                        content:'Industry';
+                    }
+                }
+                .cv-region {
+                    &:before { 
+                        content:'Region';
+                    }
+                }
+                .cv-availability  {
+                    &:before { 
+                        content:'Availibility';
+                    }
+                }
+            }
+            
+            .btn-view-profile { 
+                position: absolute;
+                right:-1px;
+                bottom:-1px; 
+                border-radius: 0;
+                border-top-left-radius: 4px;
+                color:$blue;
+                background: transparent;
+                border:none;
+                text-transform: uppercase;
+                font-size: 0.8em;
+                font-weight: bold;
+                @include media-breakpoint-up(md) {
+                    background: $blue;
+                    border:1px solid $blue;
+                    color:$white;
+                }
+                &:focus { 
+                    border:none;
+                    box-shadow: none;
+                }
+            }
+            
+            .candidate-placed {
+                display: none;
+                position: absolute;
+                background:#8f8f8f;
+                left:0px;
+                height: 100px;
+                width:100%;
+                padding:15px;
+                color:$white;
+                top: 10px;
+                @include media-breakpoint-up(md) {
+                    height: 100%;   
+                    top:0;
+                }
+                h5 { 
+                    font-weight: 600;
+                }
+                
+            }
+        } 
+    } 
+    .cv-full-profile { 
+        margin-top: 0px;
+        border-top:2px solid $blue;
+        margin: 0px -15px;
+        @include media-breakpoint-up(md) {
+            margin:inherit;
+            margin-top:-15px;
+        }
+        .card { 
+            font-size: 0.8em;
+            padding: 15px;
+            background: $gray-100;
+            border-radius: 0;
+            @include media-breakpoint-up(md) {
+                padding: 20px 40px;
+            }
+        }
+        .cv-actions { 
+            .list-group-item  {
+                border:1px solid $blue;
+                margin:5px;
+            }
+        }
+        .personal-details { 
+            span { 
+                padding-bottom: 5px;
+            }
+            margin-bottom: 15px;
+            font-weight: 600;
+            .nationality, .race, .gender, .disability, .education { 
+                &:before { 
+                    color:$gray-600;
+                    width: 80px;
+                    display: inline-block;
+                    font-weight: normal;
+                }
+                display: block;
+               
+            }
+            .nationality {
+                &:before { 
+                    content:'Citizenship';
+                }
+            }
+            .race { 
+                &:before { 
+                    content:'Ethnicity';
+                }
+            }
+            .gender {
+                &:before { 
+                    content:'Gender';
+                }
+            }
+            .disability {
+                &:before { 
+                    content:'Disabled';
+                }
+            }
+            .education {
+                &:before { 
+                    content:'Education';
+                }
+            }
+        }
+        .qualifications { 
+            margin:30px 0;
+            .h6 { 
+                margin-bottom: 5px;
+            }
+            p { 
+                margin:0;
+            }
+        }
+        .skills { 
+            margin-bottom: 30px;
+            .badge-secondary { 
+                background: $gray-300;
+                color:$gray-800;
+                padding:8px;
+            }
+        }
+        .employment-history { 
+            margin:15px 0;
+            span { 
+                padding-bottom: 5px;
+            }
+            .h6 { 
+                font-size: 1rem;
+            }
+            p { 
+                margin: 0;
+                margin-top:15px;
+                font-size: 0.9em;
+                &.small { 
+                    margin-bottom: 5px;
+                }
+            }
+            .employer, .industry, .start-date, .end-date { 
+                display: block;
+                &:before { 
+                    color:$gray-600;
+                    width: 80px;
+                    display: inline-block;
+                    font-weight: normal;
+                }
+            }
+            
+            .employer { 
+                &:before { 
+                    content:'Employer';
+                }
+            }
+            .industry { 
+                 &:before { 
+                    content:'Industry';
+                }
+                
+            }
+            .start-date { 
+                 &:before { 
+                    content:'Start Date';
+                }
+            }
+            .end-date { 
+                 &:before { 
+                    content:'End Date';
+                }
+            }
+        }
+        .latest-position { 
+            span { 
+                padding-bottom: 5px;
+            }
+            margin:15px 0;
+            .title, .salary, .industry, .sub-industry, .region { 
+                display: block;
+                &:before { 
+                    color:$gray-600;
+                    width: 120px;
+                    display: inline-block;
+                    font-weight: normal;
+                }
+            }
+            .title {
+                &:before {
+                content:'Title';
+                }
+            }
+            .salary {
+                &:before {
+                content:'Salary';
+                }
+            }
+            .industry {
+                &:before {
+                content:'Industry';
+                }
+            }
+            .sub-industry {
+                &:before {
+                content:'Sub Industry';
+                }
+            }
+            .region {
+                &:before {
+                content:'Region';
+                }
+            }
+            
+        }
+        .position-wanted { 
+            span { 
+                padding-bottom: 5px;
+            }
+            .title, .salary, .industry, .sub-industry, .alt-industry, .alt-sub-industry, .region, .availability, .experience { 
+
+                display: block;
+                    &:before { 
+                        color:$gray-600;
+                        width: 120px;
+                        display: inline-block;
+                        font-weight: normal;
+                    }
+                }
+                .title {
+                    &:before {
+                    content:'Title';
+                    }
+                }
+                
+                .salary { 
+                    &:before { 
+                        content:'Salary';
+                    }
+                }
+                .industry { 
+                     &:before { 
+                        content:'Industry';
+                    }
+
+                }
+                .sub-industry { 
+                    &:before { 
+                        content:'Sub Industry';
+                    }
+                }
+                .alt-industry { 
+                    &:before { 
+                        content:'Alt Industry';
+                    }
+                }
+                .alt-sub-industry { 
+                    &:before { 
+                        content:'Alt Sub Industry';
+                    }
+                }
+                .region { 
+                    &:before { 
+                        content:'Region';
+                    }
+                }
+                .availability { 
+                    &:before { 
+                        content:'Availability';
+                    }
+                }
+                .experience { 
+                    &:before { 
+                        content:'Experience';
+                    }
+                } 
+            }
+    }
+}
+
+[data-toggle="collapse"] i:before{
+    content: "\f078";
+}
+
+[data-toggle="collapse"].collapsed i:before{
+    content: "\f077";
+}

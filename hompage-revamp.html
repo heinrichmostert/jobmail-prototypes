@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Bootstrap 4 Minimal Template</title>
+
+	<link rel="shortcut icon" href="" type="image/x-icon">
+	<link rel="apple-touch-icon" href="">
+	<link rel="stylesheet" href="css/sparrow.css">
+
+</head>
+
+<body class="bg-light new-homepage">
+    <div class="overlay"></div>
+    
+    <div class="utility-bar d-none d-md-block">
+        <ul class="list-inline text-right">
+            <li class="list-inline-item"><a href="/setup-alerts">Get Alerts</a> </li> 
+            <li class="list-inline-item"><a href="/the-job-seekers-guide-to-finding-a-job-in-south-africa">Job Seeker Guides</a> </li> 
+            <li class="list-inline-item"><a href="/blog" target="_blank">Blog</a></li>
+            <li class="list-inline-item"><a href="/training-and-courses">Courses/Training </a> </li> <li><a href="#">&nbsp;</a></li>
+        </ul>
+    </div>
+
+    <nav class="navbar navbar-expand fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="images/jobmail-logo-full.png" alt="" height="40" class="d-none d-md-block">
+            <img src="images/jobmail-logo-square.png" alt="" height="40" class="d-block d-md-none">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-btn-outline mr-2" href="#">Create a free Jobseeker CV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-btn-primary mr-2" href="#">Post a Free Vacancy</a>
+                </li>
+                <li class="nav-item dropdown ml-auto">
+                    <a class="nav-link dropdown-toggle d-none d-md-block" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Login
+                    </a>
+                    <a class="nav-link d-block d-md-none" href="#" id="menuBtn">
+                       <img src="images/hamburger.png" alt="">
+                        Menu
+                    </a>
+                    
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Login a a Company or Recruiter</a>
+                        <a class="dropdown-item" href="#">Login as a Job Seeker</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <img src="images/jobmail-logo-full.png" alt="Job Mail Logo">
+        <span>Jobseeker</span>
+        <a href="/register-your-profile-cv">Create a Free Jobseeker CV</a>
+        <a href="/training-and-courses">Training/Courses</a>
+        <a href="/companies-hiring">Companies Hiring</a>
+        <a href="/the-job-seekers-guide-to-finding-a-job-in-south-africa">Jobseeker Guides</a>
+        <a href="/jobseeker-home">Login</a>
+
+       <span>Employer/Recruiter</span>
+       <a href="/place-free-advert">Post a Free Vacancy</a>
+       <a href="/register-as-employer">Registration</a>
+       <a href="/employer-home">Login</a>
+       <br>
+    </div>
+	
+    <div class="container-fluid top-section">
+	    <div class="row">
+	        <div class="col-md-4 bg-primary py-4 search-section">
+                <h4 class="text-center text-white font-weight-bold">Search 20,092 Jobs</h4> 
+	            <form class="search-form">
+	                <div class="form-group">
+	                    <input type="text" class="form-control" id="JobTitle" aria-describedby="JobTitle" placeholder="Job Title">
+	                    <span class="search"></span>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Industry</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Sub-Industry</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>South Africa</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>City</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+	                <button type="submit" class="btn btn-light d-block mx-auto">Search <i class="fas fa-search"></i></button>
+	            </form>
+	        </div>
+	        <div class="col-md-8 hero-section">
+                <div class="card-deck text-center h-100">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Looking for staff?</h4>
+                            <p class="card-text">54 210 Registered Job Seekers</p>
+                            <a class="btn btn-primary" href="#" role="button">Post a Free Vacancy</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Searching for a Job?</h4>
+                            <p class="card-text">20 092 Vacancies available</p>
+                            <a class="btn btn-outline-danger" href="#" role="button">Create a Free Job Seeker CV</a>
+                        </div>
+                    </div>
+                </div>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <div class="col">
+	            <img src="images/google-ad-mobile.png" alt="" class="d-block d-md-none img-fluid mx-auto">
+	        </div>
+	    </div>
+	    
+	</div>
+	<div class="container">
+	    <div class="row mt-3">
+	        <div class="col-lg-8">
+	            <div class="latest-jobs bordered-section clearfix">
+	                <h1 class="h5 font-weight-bold">Latest Jobs advertised on Job Mail</h1>
+	                <span class="jobs-num mb-3">19,873 Job Ads</span>
+	                <p class="text-muted">Explore the latest jobs advertised on Job Mail by browsing through the vanacies below.</p>
+	                
+	                <div class="card job-position" href="javascript:ViewJob();"> 
+                        <div class="card-body">
+                           <h5 class="card-title"><a href="">Data Capturers</a></h5>
+                           <span class="job-verified"><i class="fas fa-check"></i> Verified Ad</span>
+                            <ul class="list-inline">
+                               <li class="list-inline-item job-status">Full Time</li>
+                               <li class="list-inline-item job-location pr-2"><i class="fas fa-map-marker-alt"></i> Midrand</li>
+                               <li class="list-inline-item job-company"><span class="pr-2">Posted by</span> <i class="far fa-building text-primary"></i> <a href="">Recruiter Company</a></li>
+                               <li class="list-inline-item job-posted">11 Min Ago</li>
+                           </ul>
+                           <p class="job-description">To manage the instrumentation department. Responsible for implementing and maintaining safety standards accross the site and within you team ... <a href="">read more</a>
+                           </p>
+                           <a class="btn btn-primary job-apply-btn" href="#" role="button">Apply Now</a>
+                        </div>
+                    </div> 
+                    <div class="card job-position" href="javascript:ViewJob();"> 
+                        <div class="card-body">
+                           <h5 class="card-title"><a href="">Chemical Plant Instrumentation Team Senior/Junior Inspector</a></h5>
+                           <span class="job-verified"><i class="fas fa-check"></i> Verified Ad</span>
+                            <ul class="list-inline">
+                               <li class="list-inline-item job-status">Full Time</li>
+                               <li class="list-inline-item job-location pr-2"><i class="fas fa-map-marker-alt"></i> Midrand</li>
+                               <li class="list-inline-item job-company"><span class="pr-2">Posted by</span> <i class="far fa-building text-primary"></i> <a href="">NB Business Investments Inc</a></li>
+                               <li class="list-inline-item job-posted">11 Min Ago</li>
+                           </ul>
+                           <p class="job-description">To manage the instrumentation department. Responsible for implementing and maintaining safety standards accross the site and within you team ... <a href="">read more</a>
+                           </p>
+                           <a class="btn btn-primary job-apply-btn" href="#" role="button">Apply Now</a>
+                        </div>
+                    </div> 
+                    <a href="" class="float-right mt-3">Browse All Jobs In South Africa <i class="fas fa-chevron-right"></i></a>
+	            </div>
+	            <section class="section browse-by-section">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="bordered-section clearfix">
+                                <p>Browse <b>Jobs</b> By <b>Top Category</b></p>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="">IT/Computer</a><span>9,231</span></li>
+                                    <li class="list-group-item"><a href="">Sales/Marketing</a><span>1944</span></li>
+                                    <li class="list-group-item"><a href="">General Employment</a><span>4344</span></li>
+                                    <li class="list-group-item"><a href="">Automotive</a><span>16574</span></li>
+                                    <li class="list-group-item"><a href="">Finance/Accounting</a><span>17654</span></li>
+                                    <li class="list-group-item"><a href="">Tourism/Hospitality</a><span>1554</span></li>
+                                    <li class="list-group-item"><a href="">Retail</a><span>1654</span></li>
+                                    <li class="list-group-item"><a href="">Professions</a><span>1044</span></li>
+                                    <li class="list-group-item"><a href="">Administration/PA/Secretary</a><span>3334</span></li>
+                                </ul>
+                                <a href="" class="float-right mt-3">Browse All Categories <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="bordered-section clearfix">
+                                <p>Browse <b>Jobs</b> By <b>Region</b></p>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="">Gauteng</a><span>364</span></li>
+                                    <li class="list-group-item"><a href="">Western Cape</a><span>574</span></li>
+                                    <li class="list-group-item"><a href="">Kwazulu-Natal</a><span>14</span></li>
+                                    <li class="list-group-item"><a href="">Eastern Cape</a><span>434</span></li>
+                                    <li class="list-group-item"><a href="">Mpumulanga</a><span>1384</span></li>
+                                    <li class="list-group-item"><a href="">Freestate</a><span>4514</span></li>
+                                    <li class="list-group-item"><a href="">Northwest</a><span>4514</span></li>
+                                    <li class="list-group-item"><a href="">Limpopo</a><span>4514</span></li>
+                                    <li class="list-group-item"><a href="">Northern Cape</a><span>4514</span></li>
+                                </ul>
+                                <a href="" class="float-right mt-3">Browse All Categories <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="companies-hiring">
+                    <div class="bordered-section">
+                        <div class="row">
+                            <div class="col">
+                                <p><b>Companies Hiring</b></p>
+                                
+                                <div class="row">
+                                   <div class="col-6 col-lg-3 mb-3">
+                                        <div class="img-item">
+                                            <a href=""><img src="images/clientele-logo.png" alt="" class="img-fluid"></a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-6 col-lg-3 mb-3">
+                                        <div class="img-item">
+                                            <a href=""><img src="images/discovery-logo.png" alt="" class="img-fluid"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-3 mb-3">
+                                        <div class="img-item">
+                                            <a href=""><img src="images/dunlop-logo.png" alt="" class="img-fluid"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-3 mb-3">
+                                        <div class="img-item">
+                                            <a href=""><img src="images/nestle-logo.png" alt="" class="img-fluid"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="float-right mt-3">Browse All Categories <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+	        </div>
+	        <div class="col-lg-4">
+            
+	            <img src="images/google-ad.png" alt="" class="d-none d-md-block img-fluid mx-auto">
+	            
+	            <div class="bordered-section">
+	                <img src="images/get-alerts.png" alt="" class="img-fluid d-block mx-auto">
+	            </div>
+                <div class="bordered-section clearfix">
+	                <p class="text-muted"><b>Job Mail Testimonials</b></p>
+	                
+                    <div class="testimonials-item clearfix">
+                        <div class="media">
+                            <img src="images/colormagic-logo.png" class="align-self-center mr-3" alt="...">
+                            <div class="media-body align-self-center">
+                                <h5 class="mt-0">Found the correct candidate in 2 days</h5>
+                            </div>
+                        </div>
+                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. <a href="">read more <i class="fas fa-chevron-right"></i></a></p>
+                        <p class="text-muted float-right text-small">- Hendrina</p>
+                    </div>
+                    
+                    <div class="testimonials-item clearfix">
+                        <div class="media">
+                            <img src="images/mobax-logo.png" class="align-self-center mr-3" alt="...">
+                            <div class="media-body align-self-center">
+                                <h5 class="mt-0">Helpful Trainers willing to to the extra mile</h5>
+                            </div>
+                        </div>
+                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. <a href="">read more <i class="fas fa-chevron-right"></i></a></p>
+                        <p class="text-muted float-right text-small">- Ralph</p>
+                    </div>
+                    <a href="" class="float-right mt-3">Browse All Testimonials</a>
+	            </div>
+	            <div class="bordered-section">
+	               <p class="text-muted"><b>Job Mail Newsletter</b></p>
+	                <form action="" class="px-4">
+	                    <div class="form-group">
+                            <input type="email" class="form-control mb-2" id="emailAddress" aria-describedby="emailAddress" placeholder="Email Address">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio1">Job Seeker</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio2">Company/Recruiter</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-outline-danger btn-block">Sign up for Newsletter</button>
+	                </form>
+	            </div>
+	            <div class="bordered-section clearfix">
+	                <p class="text-muted"><b>Latest Job Articles</b></p>
+	                <a href="">
+                        <div class="latest-job-articles">
+	                        <div class="media mb-3">
+	                            <img src="images/colormagic-logo.png" class="align-self-center mr-3" alt="...">
+	                            <div class="media-body align-self-center">
+	                                <h5 class="mt-0">Agile Software Development Mistakes to Avoid</h5>
+	                            </div>
+	                        </div>
+	                    </div>
+	               </a>
+                    <a href="">
+                        <div class="latest-job-articles clearfix">
+                            <div class="media mb-3">
+                                <img src="images/colormagic-logo.png" class="align-self-center mr-3" alt="...">
+                                <div class="media-body align-self-center">
+                                    <h5 class="mt-0">Agile Software Development Mistakes to Avoid</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="float-right mt-3">Browse All Articles</a>
+	            </div>
+	        </div>
+	    </div>
+           
+	    
+    </div>
+	<!-- do not forget download jquery (http://jquery.com/download/)-->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256 CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<!-- Bootstrap bundle for full components support -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script>
+        $("#menuBtn").click(function(){
+          $(".sidenav").addClass("show");
+          $(".overlay").addClass("show");
+          $(".overlay").removeClass("hide");
+          $("body").addClass("no-overflow");
+        });
+        
+        $(".closebtn").click(function(){
+          $(".overlay").addClass("hide");
+          $(".overlay").removeClass("show");
+          $(".sidenav").removeClass("show");
+          $("body").removeClass("no-overflow");
+        });
+    </script>
+
+</body>
+</html>

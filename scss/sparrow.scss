@@ -1,0 +1,32 @@
+/*!
+ * Dot Slash v4.3.1 (http://www.dotslash.co.za/)
+ * Copyright 2011-2019 Dot Slash.
+ */
+ 
+// Font Smoothing 
+html, html a, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004); 
+    outline: none;
+}
+
+// Fonts 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+@import "fontawesome/fontawesome";
+@import "fontawesome/solid.scss";
+@import "fontawesome/regular.scss";
+
+// Bootstrap
+@import "bootstrap/bootstrap";
+
+// Pages
+@import "pages/layout";
+@import "pages/homepage";
+@import "pages/cv-search";
+@import "pages/cv-refine-search";
+
+
+//Theme 
+@import "theme/theme";
